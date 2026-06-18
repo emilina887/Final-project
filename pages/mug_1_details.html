@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/details.css">
     <link rel="stylesheet" href="../style/details_adaptive.css">
-    <link rel="stylesheet" href="../style/style.css">
     <title>Сторінка товару</title>
 </head>
 <body>
-    <header>
-        <h1>PeachDish</h1>
+    <header class="catalog-header">
+        <div class="header-top">
+            <div class="logo-placeholder">
+                <img src="../assets/photos/logo.jfif" alt="Logo">
+            </div>
+            <h1>PeachDish</h1>
+            <div class="spacer"></div>
+        </div>
 
         <nav>
-            <a href="#">Головна</a>
-            <a href="#">Про нас</a>
-            <a href="#">Контакти</a>
+            <a href="../index.html">Головна</a>
+            <a href="../index.html">Про нас</a>
+            <a href="../index.html">Контакти</a>
         </nav>
     </header>
 
     <div class="wrapper">
-        <a href="./catalog-cutlery.html" class="back-btn">← Повернутися назад</a>
+        <a href="./catalog-cups.html" class="back-btn">← Повернутися назад</a>
 
         <main class="product-main">
             <img class="photo-box" src="../assets/photos/cups/Керамічна кружка Pusheen.jpg" alt="Pusheen">
@@ -37,7 +43,7 @@
             
             <div class="review-card">
                 <strong>
-                    <img src="../img/user-avatar1.png" alt="Avatar" class="author-icon"> 
+                    <img class="author-icon" src="../assets/photos/avatar.jpg" alt="Avatar" class="author-icon"> 
                     Олена:
                 </strong>
                 <p>Дуже задоволена покупкою! Якість на висоті.</p>
@@ -45,7 +51,7 @@
             
             <div class="review-card">
                 <strong>
-                    <img src="../img/user-avatar2.png" alt="Avatar" class="author-icon"> 
+                    <img class="author-icon" src="../assets/photos/avatar.jpg" alt="Avatar" class="author-icon"> 
                     Андрій:
                 </strong>
                 <p>Швидка доставка, товар відповідає опису. Дякую!</p>
@@ -54,8 +60,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Назва вашого магазину. Всі права захищені.</p>
-        <p>Контакти: info@shop.com | +380 00 000 0000</p>
+        <p>© 2026 PeachDish. Всі права захищені.</p>
     </footer>
 
 </body>
