@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PeachDish</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/aboutUs.css">
     <link rel="stylesheet" href="./style/adaptive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="catalog-header">
-        <div class="header-top">
-            <div class="logo-placeholder">
-                <img src="" alt="Logo"> 
-            </div>
-            <h1>PeachDish</h1>
-            <div class="spacer"></div> 
+<header class="catalog-header">
+    <div class="header-top">
+        <div class="logo-placeholder">
+            <img src="../assets/photos/логотипп.png" alt="Logo">
         </div>
-    
-        <nav>
-            <a href="./index.html">Головна</a>
-            <a href="#">Про нас</a>
-            <a href="#">Контакти</a>
-        </nav>
-    </header>
-<section class="hero">
-    <div>
-        <h2>Красивий посуд для вашого дому</h2>
-        <p>Якісний кухонний вінтажнтий посуд для щоденного використання.</p>
-        <a href="#catalog"><button>Переглянути каталог</button></a>
+        <h1>PeachDish</h1>
+        <div class="spacer"></div>
     </div>
 
+    <nav>
+        <a href="#">Головна</a>
+        <a href="#about">Про нас</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Красивий посуд для вашого дому</h2>
+        <p>Якісний кухонний вінтажний посуд для щоденного використання.</p>
+        <a href="#catalog"><button>Переглянути каталог</button></a>
+    </div>
     <img src="https://images.ua.prom.st/2801707447_2801707447.jpg?PIMAGE_ID=2801707447" alt="Посуд">
 </section>
 
+<section class="about" id="about">
+    <h2>Про нас</h2>
+    <p>Ласкаво просимо до PeachDish! Ми створюємо та підбираємо унікальний вінтажний посуд, який додає затишку кожній оселі. Наша місія — поєднувати естетику минулого із практичністю сьогодення, щоб кожен ваш сніданок, обід чи вечеря перетворювалися на маленьке естетичне свято. Вишуканість у кожній деталі для вашого натхнення.</p>
+</section>
+
 <section class="catalog" id="catalog">
-
     <h2>Каталог</h2>
-
     <div class="cards">
         <a href="./pages/catalog-cups.html">
             <div class="card">
                 <img src="https://i.pinimg.com/1200x/7b/57/d5/7b57d5e730942ff73319f449639e9e3c.jpg" alt="Чашки">
                 <h3>Чашки</h3>
-                <p>Стильні набори чашок.</p>
+                <p>Стильні наборы чашок.</p>
             </div>
         </a>
 
@@ -65,12 +71,19 @@
                 <p>Для будь-яких страв.</p>
             </div>
         </a>
-
     </div>
-
 </section>
 
-<footer>
+<footer id="contacts">
+    <div class="footer-contacts">
+        <h3>Контакти</h3>
+        <p>Телефон: +38 (099) 123-45-67</p>
+        <p>Email: info@peachdish.com</p>
+        <p>Адреса: м. Одеса, вул. Чебуречна, 23</p>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 PeachDish. Усі права захищені.</p>
+    </div>
 </footer>
 
 </body>
