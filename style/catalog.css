@@ -1,12 +1,14 @@
-/* --- СТИЛІ ДЛЯ СТОРІНКИ КАТАЛОГУ ЧАШОК --- */
-
-/* Нова естетична шапка з лінією на всю ширину */
 .catalog-header {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(223, 171, 116, 0.3);
+}
+
+header
+{
+    z-index: 100;
 }
 
 .header-top {
