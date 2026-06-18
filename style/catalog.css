@@ -21,30 +21,26 @@
 
 
 .logo-placeholder {
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 140px;
     border: none !important; 
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 11px;
-    color: #dfab74;
     overflow: hidden;
 }
 
 .logo-placeholder img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;      
-    border-radius: 50%;
-    display: block;           
+    width: 100%;         
+    height: 100%;        
+    object-fit: contain; 
+    border-radius: 50%; 
 }
 
 .spacer {
-    width: 60px; 
+    width: 140px;         
 }
-
 .catalog-container {
     max-width: 1200px;
     margin: 0 auto;

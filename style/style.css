@@ -76,8 +76,8 @@ a {
 }
 
 .logo-placeholder {
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 140px;
     border: none !important; 
     border-radius: 50%;
     display: flex;
@@ -85,19 +85,20 @@ a {
     justify-content: center;
     overflow: hidden;
 }
+
 .logo-placeholder img {
-    width: 60px;        
-    height: 60px;       
-    object-fit: cover;  
+    width: 100%;         
+    height: 100%;        
+    object-fit: contain; 
     border-radius: 50%; 
 }
 
 .spacer {
-    width: 60px; 
+    width: 140px;         
 }
-
 /* Головний блок */
-.hero{
+.hero
+{
     min-height:80vh;
     display:flex;
     justify-content:space-between;
