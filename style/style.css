@@ -10,11 +10,9 @@
   font-style: normal;
 }
 
-
 body{
-    font-family:"Parisienne", cursive;
-    font-size: 20px;
-
+    font-family:"Poppins", sans-serif; /* Для основного тексту краще читабельний шрифт */
+    font-size: 18px;
     background: linear-gradient(
         135deg,
         #fff7f2 0%,
@@ -24,46 +22,81 @@ body{
     );
     color:#58493d;
 }
+
+/* Навігація та посилання (Виправлено кольори) */
+nav {
+    display: flex;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #58493d; /* Коричневий за замовчуванням */
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e28755; /* М'який персиковий колір при наведенні */
+}
+
+nav a:visited {
+    color: #58493d; /* Щоб посилання не ставало фіолетовим або червоним після натискання */
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Шапка */
-
-header{
-    position:sticky;
-    top:0;
-    background:rgba(255,255,255,0.75);
-    backdrop-filter:blur(15px);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:15px;
-    padding:20px;
-    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+.catalog-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(223, 171, 116, 0.3);
+    background-color: rgba(255, 247, 242, 0.8);
 }
 
-header h1{
-    color:#dfab74;
-    font-size:36px;
+.header-top {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
 }
 
-nav{
-    display:flex;
-    justify-content:center;
-    gap:30px;
+.header-top h1 {
+    font-family: "Parisienne", cursive;
+    font-size: 36px;
+    color: #4d3829;
 }
 
-nav a{
-    text-decoration:none;
-    color:#444;
-    font-weight:500;
-    transition:0.3s;
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed #dfab74;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-nav a:hover{
-    color:#b88a5a;
+.logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spacer {
+    width: 60px; 
 }
 
 /* Головний блок */
-
 .hero{
     min-height:80vh;
     display:flex;
@@ -82,9 +115,11 @@ nav a:hover{
 }
 
 .hero h2{
+    font-family: "Parisienne", cursive;
     font-size:60px;
     line-height:1.1;
     margin-bottom:20px;
+    color: #4d3829;
 }
 
 .hero p{
@@ -105,11 +140,13 @@ nav a:hover{
     border-radius:50px;
     font-size:16px;
     transition:0.3s;
-    font-family:"Parisienne", cursive;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 .hero button:hover{
     transform:scale(1.05);
+    box-shadow: 0 5px 15px rgba(184, 138, 90, 0.4);
 }
 
 .hero img{
@@ -118,28 +155,7 @@ nav a:hover{
     box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
 
-/* Статистика */
-
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:100px;
-    padding:50px;
-    background:white;
-    text-align:center;
-}
-
-.stats h3{
-    font-size:42px;
-    color:#b88a5a;
-}
-
-.stats p{
-    color:#666;
-}
-
 /* Каталог */
-
 .catalog{
     padding:80px 60px;
     background: linear-gradient(
@@ -151,9 +167,11 @@ nav a:hover{
 }
 
 .catalog h2{
+    font-family: "Parisienne", cursive;
     text-align:center;
     margin-bottom:40px;
-    font-size:38px;
+    font-size:46px;
+    color: #4d3829;
 }
 
 .cards{
@@ -186,41 +204,32 @@ nav a:hover{
 .card h3{
     padding:20px 20px 10px;
     color:#4d3829;
+    font-size: 22px;
 }
 
 .card p{
     padding:0 20px 20px;
     color:#666;
+    font-size: 16px;
 }
 
 /* Про нас */
-
 .about{
-    background:#f9e0d0;
+    background: rgba(249, 224, 208, 0.6);
     text-align:center;
     padding:80px 60px;
 }
 
 .about h2{
+    font-family: "Parisienne", cursive;
     margin-bottom:20px;
-    font-size:38px;
+    font-size:46px;
+    color: #4d3829;
 }
 
 .about p{
     max-width:800px;
     margin:auto;
     line-height:1.8;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Футер */
-
-footer{
-    background:#fff4ee;
-    text-align:center;
-    padding:30px;
-    color:#4d3829;
+    color: #58493d;
 }
