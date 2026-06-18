@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior: smooth;
 }
 .parisienne-regular {
   font-family: "Parisienne", cursive;
@@ -102,9 +103,9 @@ nav a:hover{
     border:none;
     padding:15px 35px;
     border-radius:50px;
-    cursor:pointer;
     font-size:16px;
     transition:0.3s;
+    font-family:"Parisienne", cursive;
 }
 
 .hero button:hover{
@@ -209,6 +210,10 @@ nav a:hover{
     max-width:800px;
     margin:auto;
     line-height:1.8;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Футер */
