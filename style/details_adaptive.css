@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+    .product-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .info-box {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .spacer {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .photo-box {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .wrapper {
+        padding: 15px;
+    }
+
+    .info-box h1 {
+        font-size: 1.6em;
+    }
+
+    .price-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
