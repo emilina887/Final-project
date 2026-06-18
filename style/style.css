@@ -4,14 +4,10 @@
     box-sizing:border-box;
     scroll-behavior: smooth;
 }
-.parisienne-regular {
-  font-family: "Parisienne", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 body{
-    font-family:"Poppins", sans-serif; /* Для основного тексту краще читабельний шрифт */
+    font-family:"Poppins", sans-serif; 
     font-size: 18px;
     background: linear-gradient(
         135deg,
@@ -23,7 +19,7 @@ body{
     color:#58493d;
 }
 
-/* Навігація та посилання (Виправлено кольори) */
+/* Навігація та посилання */
 nav {
     display: flex;
     gap: 30px;
@@ -31,7 +27,7 @@ nav {
 }
 
 nav a {
-    color: #58493d; /* Коричневий за замовчуванням */
+    color: #58493d; 
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
@@ -39,11 +35,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #e28755; /* М'який персиковий колір при наведенні */
+    color: #e28755; 
 }
 
 nav a:visited {
-    color: #58493d; /* Щоб посилання не ставало фіолетовим або червоним після натискання */
+    color: #58493d; 
 }
 
 a {
@@ -116,7 +112,6 @@ a {
 }
 
 .hero h2{
-    font-family: "Parisienne", cursive;
     font-size:60px;
     line-height:1.1;
     margin-bottom:20px;
