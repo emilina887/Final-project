@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #eee;
+}
+
+.back-btn {
+    display: inline-block;
+    margin: 20px 0;
+    color: #555;
+    text-decoration: none;
+}
+
+.product-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: center;
+}
+
+.photo-box {
+    width: 400px;
+    height: 400px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.info-box {
+    flex: 1;
+    max-width: 400px;
+}
+
+.price-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff4757;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.reviews {
+    margin-top: 60px;
+}
+
+.review-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 5px solid #ff4757;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
