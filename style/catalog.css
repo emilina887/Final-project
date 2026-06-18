@@ -1,4 +1,8 @@
-
+.header-top h1 {
+    font-family: "Parisienne", cursive;
+    font-size: 36px;
+    color: #4d3829;
+}
 .catalog-header {
     width: 100%;
     display: flex;
