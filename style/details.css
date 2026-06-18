@@ -77,3 +77,12 @@ footer {
     padding: 30px;
     margin-top: 50px;
 }
+
+.author-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}

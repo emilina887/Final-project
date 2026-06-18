@@ -18,11 +18,10 @@
     padding: 10px 20px;
 }
 
-/* Місце для логотипу зліва */
 .logo-placeholder {
     width: 60px;
     height: 60px;
-    border: 2px dashed #dfab74; /* Тимчасова рамка, поки немає фото */
+    border: 2px dashed #dfab74;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -38,12 +37,10 @@
     object-fit: cover;
 }
 
-/* Пустий блок справа для ідеального центрування тексту */
 .spacer {
     width: 60px; 
 }
 
-/* Головний контейнер каталогу */
 .catalog-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -66,14 +63,12 @@
     color: #8c7665;
 }
 
-/* Проста та зрозуміла CSS Grid сітка: 3 колонки */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px; /* Відступи між картками */
+    gap: 40px;
 }
 
-/* Картка товару */
 .product-card {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
@@ -81,19 +76,17 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); /* Плавна анімація */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
 }
 
-/* Ефект виділення картки при наведенні (Hover) */
 .product-card:hover {
-    transform: translateY(-8px) scale(1.02); /* Легке підняття та збільшення */
-    background: #ffffff; /* Робимо фон чисто білим */
-    border-color: #dfab74; /* Рамка під колір бренду */
-    box-shadow: 0 20px 35px rgba(223, 171, 116, 0.2); /* Тепле персикове свічення */
+    transform: translateY(-8px) scale(1.02);
+    background: #ffffff;
+    border-color: #dfab74;
+    box-shadow: 0 20px 35px rgba(223, 171, 116, 0.2);
 }
 
-/* Обгортка для фото чашки */
 .product-img-wrapper {
     width: 100%;
     height: 280px;
@@ -107,12 +100,10 @@
     transition: transform 0.5s ease;
 }
 
-/* Ефект наближення картинки всередині при наведенні */
 .product-card:hover img {
     transform: scale(1.06);
 }
 
-/* Інформація про товар */
 .product-info {
     padding: 20px;
     text-align: center;
@@ -124,7 +115,6 @@
     margin-bottom: 8px;
 }
 
-/* Стиль для ціни */
 .price {
     font-size: 20px;
     font-weight: 600;
