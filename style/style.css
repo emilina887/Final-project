@@ -2,10 +2,19 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+.parisienne-regular {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
+
 body{
-    font-family:'Poppins',sans-serif;
+    font-family:"Parisienne", cursive;
+    font-size: 20px;
+
     background: linear-gradient(
         135deg,
         #fff7f2 0%,
@@ -32,7 +41,7 @@ header{
 }
 
 header h1{
-    color:#b88a5a;
+    color:#dfab74;
     font-size:36px;
 }
 
@@ -94,9 +103,9 @@ nav a:hover{
     border:none;
     padding:15px 35px;
     border-radius:50px;
-    cursor:pointer;
     font-size:16px;
     transition:0.3s;
+    font-family:"Parisienne", cursive;
 }
 
 .hero button:hover{
@@ -203,6 +212,10 @@ nav a:hover{
     line-height:1.8;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Футер */
 
 footer{
@@ -210,39 +223,4 @@ footer{
     text-align:center;
     padding:30px;
     color:#4d3829;
-}
-
-/* Адаптивність */
-
-@media(max-width:900px){
-
-    header{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .hero{
-        flex-direction:column;
-        text-align:center;
-        gap:30px;
-        padding:50px 30px;
-    }
-
-    .hero h2{
-        font-size:40px;
-    }
-
-    .hero img{
-        width:100%;
-        max-width:450px;
-    }
-
-    .stats{
-        flex-direction:column;
-        gap:30px;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
 }

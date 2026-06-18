@@ -1,0 +1,122 @@
+/* --- СТИЛІ ДЛЯ СТОРІНКИ КАТАЛОГУ ЧАШОК --- */
+
+/* Нова естетична шапка з лінією на всю ширину */
+.catalog-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(223, 171, 116, 0.3);
+}
+
+.header-top {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed #dfab74;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: #dfab74;
+    overflow: hidden;
+}
+
+.logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spacer {
+    width: 60px; 
+}
+
+.catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.catalog-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.catalog-title h2 {
+    font-size: 42px;
+    color: #4d3829;
+    margin-bottom: 10px;
+}
+
+.catalog-title p {
+    font-size: 18px;
+    color: #8c7665;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: #ffffff;
+    border-color: #dfab74;
+    box-shadow: 0 20px 35px rgba(223, 171, 116, 0.2);
+}
+
+.product-img-wrapper {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.06);
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 22px;
+    color: #4d3829;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #b88a5a;
+}
