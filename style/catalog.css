@@ -123,3 +123,54 @@ header
     font-weight: 600;
     color: #b88a5a;
 }
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .catalog-container {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+    .spacer {
+        display: none;
+    }
+    .catalog-title h2 {
+        font-size: 32px;
+    }
+    .catalog-title p {
+        font-size: 16px;
+    }
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .product-img-wrapper {
+        height: 220px;
+    }
+}
+
+@media (max-width: 520px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .product-img-wrapper {
+        height: 250px;
+    }
+    .logo-placeholder {
+        width: 110px;
+        height: 110px;
+    }
+    .catalog-title h2 {
+        font-size: 28px;
+    }
+}
