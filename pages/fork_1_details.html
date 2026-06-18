@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/details.css">
     <link rel="stylesheet" href="../style/contact.css">
     <link rel="stylesheet" href="../style/details_adaptive.css">
-    <link rel="stylesheet" href="../style/style.css">
     <title>Сторінка товару</title>
 </head>
 <body>
-    <header>
-        <h1>PeachDish</h1>
+    <header class="catalog-header">
+        <div class="header-top">
+            <div class="logo-placeholder">
+                <img src="../assets/photos/logo.jfif" alt="Logo">
+            </div>
+            <h1>PeachDish</h1>
+            <div class="spacer"></div>
+        </div>
 
         <nav>
-            <a href="#">Головна</a>
-            <a href="#">Про нас</a>
-            <a href="#">Контакти</a>
+            <a href="../index.html">Головна</a>
+            <a href="../index.html">Про нас</a>
+            <a href="../index.html">Контакти</a>
         </nav>
     </header>
 
@@ -24,12 +30,12 @@
         <a href="./catalog-cutlery.html" class="back-btn">← Повернутися назад</a>
 
         <main class="product-main">
-            <div class="photo-box">Велике фото товару</div>
+            <img class="photo-box" src="../assets/photos/cultlery/vilka1.png" alt="вілка1">
             
             <div class="info-box">
-                <h1>Назва товару</h1>
-                <p>Тут ви можете розмістити детальний опис товару, його характеристики та переваги для клієнта. Опис має бути переконливим.</p>
-                <div class="price-btn">Ціна: 999 грн</div>
+                <h1>Срібна обідня виделка</h1>
+                <p>Вінтажна срібна столова вилка в класичному стилі «Рококо Мушля»</p>
+                <div class="price-btn">230 грн</div>
             </div>
         </main>
 
@@ -38,33 +44,26 @@
             
             <div class="review-card">
                 <strong>
-                    <img src="../img/user-avatar1.png" alt="Avatar" class="author-icon"> 
-                    Олена:
+                    <img class="author-icon" src="../assets/photos/avatar.jpg" alt="Avatar" class="author-icon"> 
+                    Людмила:
                 </strong>
-                <p>Дуже задоволена покупкою! Якість на висоті.</p>
+                <p>Дуже якісно та гарно!</p>
             </div>
             
             <div class="review-card">
                 <strong>
-                    <img src="../img/user-avatar2.png" alt="Avatar" class="author-icon"> 
-                    Андрій:
+                    <img class="author-icon" src="../assets/photos/avatar.jpg" alt="Avatar" class="author-icon"> 
+                    Сергій:
                 </strong>
-                <p>Швидка доставка, товар відповідає опису. Дякую!</p>
+                <p>Дякую з неї смачно їсти!</p>
             </div>
         </section>
     </div>
 
-    <footer id="contacts">
-    <div class="footer-contacts">
-        <h3>Контакти</h3>
-        <p>Телефон: +38 (099) 123-45-67</p>
-        <p>Email: info@peachdish.com</p>
-        <p>Адреса: м. Одеса, вул. Чебуречна, 23</p>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 PeachDish. Усі права захищені.</p>
-    </div>
-</footer> 
+    <footer>
+        <p>&copy; 2026 Назва вашого магазину. Всі права захищені.</p>
+        <p>Контакти: info@shop.com | +380 00 000 0000</p>
+    </footer>
 
 </body>
 </html>
