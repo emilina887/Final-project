@@ -10,11 +10,9 @@
   font-style: normal;
 }
 
-
 body{
-    font-family:"Parisienne", cursive;
-    font-size: 20px;
-
+    font-family:"Poppins", sans-serif; /* Для основного тексту краще читабельний шрифт */
+    font-size: 18px;
     background: linear-gradient(
         135deg,
         #fff7f2 0%,
@@ -24,6 +22,34 @@ body{
     );
     color:#58493d;
 }
+
+/* Навігація та посилання (Виправлено кольори) */
+nav {
+    display: flex;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #58493d; /* Коричневий за замовчуванням */
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e28755; /* М'який персиковий колір при наведенні */
+}
+
+nav a:visited {
+    color: #58493d; /* Щоб посилання не ставало фіолетовим або червоним після натискання */
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Шапка */
 .catalog-header {
     width: 100%;
@@ -31,6 +57,7 @@ body{
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(223, 171, 116, 0.3);
+    background-color: rgba(255, 247, 242, 0.8);
 }
 
 .header-top {
@@ -39,8 +66,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    
+    padding: 15px 20px;
+}
+
+.header-top h1 {
+    font-family: "Parisienne", cursive;
+    font-size: 36px;
+    color: #4d3829;
 }
 
 .logo-placeholder {
@@ -51,8 +83,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 11px;
-    color: #dfab74;
     overflow: hidden;
 }
 .logo-placeholder img {
@@ -66,29 +96,7 @@ body{
     width: 60px; 
 }
 
-.catalog-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;
-}
-
-.catalog-title {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.catalog-title h2 {
-    font-size: 42px;
-    color: #4d3829;
-    margin-bottom: 10px;
-}
-
-.catalog-title p {
-    font-size: 18px;
-    color: #8c7665;
-}
 /* Головний блок */
-
 .hero{
     min-height:80vh;
     display:flex;
@@ -107,9 +115,11 @@ body{
 }
 
 .hero h2{
+    font-family: "Parisienne", cursive;
     font-size:60px;
     line-height:1.1;
     margin-bottom:20px;
+    color: #4d3829;
 }
 
 .hero p{
@@ -130,11 +140,13 @@ body{
     border-radius:50px;
     font-size:16px;
     transition:0.3s;
-    font-family:"Parisienne", cursive;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 .hero button:hover{
     transform:scale(1.05);
+    box-shadow: 0 5px 15px rgba(184, 138, 90, 0.4);
 }
 
 .hero img{
@@ -143,28 +155,7 @@ body{
     box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
 
-/* Статистика */
-
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:100px;
-    padding:50px;
-    background:white;
-    text-align:center;
-}
-
-.stats h3{
-    font-size:42px;
-    color:#b88a5a;
-}
-
-.stats p{
-    color:#666;
-}
-
 /* Каталог */
-
 .catalog{
     padding:80px 60px;
     background: linear-gradient(
@@ -176,9 +167,11 @@ body{
 }
 
 .catalog h2{
+    font-family: "Parisienne", cursive;
     text-align:center;
     margin-bottom:40px;
-    font-size:38px;
+    font-size:46px;
+    color: #4d3829;
 }
 
 .cards{
@@ -211,86 +204,11 @@ body{
 .card h3{
     padding:20px 20px 10px;
     color:#4d3829;
+    font-size: 22px;
 }
 
 .card p{
     padding:0 20px 20px;
     color:#666;
-}
-
-/* Про нас */
-
-.about{
-    background:#f9e0d0;
-    text-align:center;
-    padding:80px 60px;
-}
-
-.about h2{
-    margin-bottom:20px;
-    font-size:38px;
-}
-
-.about p{
-    max-width:800px;
-    margin:auto;
-    line-height:1.8;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Футер */
-
-footer{
-    background:#fff4ee;
-    text-align:center;
-    padding:30px;
-    color:#4d3829;
-}
-
-@media (max-width: 992px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-        gap: 30px;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
-
-    .hero h2 {
-        font-size: 42px;
-    }
-
-    .hero img {
-        width: 100%;
-        max-width: 450px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero h2 {
-        font-size: 32px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .catalog {
-        padding: 50px 20px;
-    }
-
-    .catalog h2 {
-        font-size: 30px;
-    }
+    font-size: 16px;
 }
