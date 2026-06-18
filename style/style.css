@@ -219,38 +219,3 @@ footer{
     padding:30px;
     color:#4d3829;
 }
-
-/* Адаптивність */
-
-@media(max-width:900px){
-
-    header{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .hero{
-        flex-direction:column;
-        text-align:center;
-        gap:30px;
-        padding:50px 30px;
-    }
-
-    .hero h2{
-        font-size:40px;
-    }
-
-    .hero img{
-        width:100%;
-        max-width:450px;
-    }
-
-    .stats{
-        flex-direction:column;
-        gap:30px;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-}
