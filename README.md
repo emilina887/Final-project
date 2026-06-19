@@ -7,3 +7,6 @@ code .
 https://canva.link/wvnz7h6uu8nuk7r
 git config --global user.name "imya"
 git config --global user.email "ваш_email@example.com"
+
+
+https://canva.link/cq906somie9gjss
